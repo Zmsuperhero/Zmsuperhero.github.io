@@ -4,13 +4,50 @@
   
     
     <entry>
-      <title>category</title>
-      <link href="/2022/01/22/category/"/>
-      <url>/2022/01/22/category/</url>
+      <title>butterfly搭建问题</title>
+      <link href="/2022/01/30/question/"/>
+      <url>/2022/01/30/question/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h2 id="如何从零部署一个博客"><a href="#如何从零部署一个博客" class="headerlink" title="如何从零部署一个博客"></a>如何从零部署一个博客</h2><ol><li>拥有一个GitHub账号。 为了更愉快的冲浪，可以装个Google插件或者挂个梯子或者怎么地都行</li><li>了解GitHub库的概念以及hexo框架</li><li>以上两步均可忽略，最重要的是找到一个适合自己的教程，如果你一点都不了解相关知识，请尽量看视频，比如<a href="https://www.bilibili.com/video/BV1mU4y1j72n/?spm_id_from=333.788.recommend_more_video.0">这个视频</a></li><li>哈哈哈哈哈哈哈哈<del>本篇内容到此结束</del></li></ol><h2 id="搭建时可能出现的问题"><a href="#搭建时可能出现的问题" class="headerlink" title="搭建时可能出现的问题"></a>搭建时可能出现的问题</h2><ol><li><p>不要用版本太低的hexo和node</p></li><li><p>hexo d之后出现 error: failed to push some refs to 相关报错<br>解决方式：另起一行run两下</p><blockquote><p>git config –global user.email 你的邮箱<br>git config –global user.name 你的名字</p></blockquote></li><li><p>hexo d报错，多半是网不好，不要慌，多刷新几次，总能同步上的</p></li><li><p>注意空格和英文 </p></li></ol><h2 id="应用主题"><a href="#应用主题" class="headerlink" title="应用主题"></a>应用主题</h2><p><a href="https://hexo.io/themes/">hexo</a>官网中有很多主题，爱用哪个用哪个 本篇使用的是<a href="https://butterfly.js.org/">butterfly</a><br>以下内容均为butterfly主题相关：<br>首先注意的是根目录与主题目录的区别，根目录(即config.yml)中的内容更少，修改的是公告，简介等，其余的个性化内容均在主题目录butterfly.config中设置。图片，背景，标语等等，官方文档中讲的很详细，此处不再赘述。</p><h3 id="设置背景与透明"><a href="#设置背景与透明" class="headerlink" title="设置背景与透明"></a>设置背景与透明</h3><p>为避免后续升级时修改内容被覆盖，同时有些内容无法在源文件中修改，<code>D:\blog\themes\butterfly\source\css</code>中建立新文件夹mycss，建立新文件background.css。此博客的参数为：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">#web_bg &#123;</span><br><span class="line"> background: url(图片路径);</span><br><span class="line"> background-repeat: no-repeat; </span><br><span class="line"> background-size: cover;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#recent-posts&gt;.recent-post-item,.layout&gt;div:first-child:not(.recent-posts),.layout_post&gt;#page,.layout_post&gt;#post,.read-mode .layout_post&gt;#post&#123;</span><br><span class="line"> background: rgba(255,255,255,.9);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#aside-content&gt;.card-widget,.sticky_layout&gt;.card-widget&#123;</span><br><span class="line"> background: rgba(255,255,255,.9) !important;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#footer&#123;</span><br><span class="line"> background: transparent;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="主题颜色"><a href="#主题颜色" class="headerlink" title="主题颜色"></a>主题颜色</h3><div class="note warning flat"><p>去掉theme color的注释# 否则更改不生效，其余同理。最简单的方法是将自己的代码与使用文档对照。</p></div><p>如何选择合适的<a href="https://flatuicolors.com/">配色</a></p><h3 id="更改字体"><a href="#更改字体" class="headerlink" title="更改字体"></a>更改字体</h3><p>font_family中更改，字号或字体。按道理来讲，英文字体在前，中文字体在后，可以使网站呈现两种字体，但是在butterfly中这样设置没有成功，只能设置单独的英文或中文。<br>字号以16px到20px之间为佳，一般偶数</p>]]></content>
       
       
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>HTML</title>
+      <link href="/2022/01/22/HTML/"/>
+      <url>/2022/01/22/HTML/</url>
+      
+        <content type="html"><![CDATA[<h1 id="2022-1-14"><a href="#2022-1-14" class="headerlink" title="2022.1.14"></a>2022.1.14</h1><p>learn what‘s HTML，the first html code I learn is<br><code>&lt;img scr=&quot;SharedScreenshot.jpg&quot;&gt;</code> ^3d3e15</p><h1 id="2022-1-15-HTML-grammar-specification"><a href="#2022-1-15-HTML-grammar-specification" class="headerlink" title="2022.1.15 HTML grammar specification"></a>2022.1.15 HTML grammar specification</h1><p>what’s web standered and it’s fuction<br>It includes: structure(HTML)  presentation(CSS) behavior(java)</p><h2 id="overview"><a href="#overview" class="headerlink" title="overview:"></a>overview:</h2><ul><li>every label must be included in &lt;.&gt;  ,every!</li><li>labels often come in pairs like <html></html>  start and end</li><li>few single label <br /><h2 id="label-relationship"><a href="#label-relationship" class="headerlink" title="label relationship"></a>label relationship</h2></li></ul><ul><li>contain<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line">   &lt;title&gt;&lt;/title&gt;</span><br><span class="line">&lt;/head&gt; </span><br></pre></td></tr></table></figure></li><li>tied<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;&lt;/head&gt;</span><br><span class="line">&lt;body&gt;&lt;/body&gt;</span><br></pre></td></tr></table></figure></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 半途而废中 </tag>
+            
+        </tags>
       
     </entry>
     
